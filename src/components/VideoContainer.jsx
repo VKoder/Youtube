@@ -3,7 +3,7 @@ import VideoCards from './VideoCards'
 
 const VideoContainer = () => {
   return (
-    <div>
+    <div className='w-full'>
      <VideoCards/>
     </div>
   )

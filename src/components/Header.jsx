@@ -8,10 +8,14 @@ const Header = () => {
         setshowSearch(!showSearch)
     }
 
+    const handleSideToggle = ()=>{
+        
+    }
+
     return (
         <div className='flex flex-row justify-between items-center w-full fixed top-0 bg-slate-100 py-1.5 px-3 md:py-3 md:px-6'>
             {showSearch && <div className='w-3/12 md:w-2/12 flex justify-start gap-4 flex-row'>
-                <i className="hidden md:block text-2xl ri-menu-fill"></i>
+                <i className="hidden md:block text-2xl ri-menu-fill" onClick={handleSideToggle}></i>
                 <img className='sm:w-32 w-60 md:w-28' src='https://imgs.search.brave.com/ZkmciWYxBPpDh_MtRVSqu6hNmBsU9tpAEHN9oo0JKLI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzA3LzQ2Lzg0/LzM2MF9GXzUwNzQ2/ODQ3OV9IZnJwVDdD/SW9ZVEJaU0dSUWk3/UmNXZ285OHdvM3Zi/Ny5qcGc' alt='logo'></img>
 
             </div>}

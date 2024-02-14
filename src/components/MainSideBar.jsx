@@ -1,11 +1,30 @@
-import React from 'react'
+import React from "react";
 
 const MainSideBar = () => {
   return (
-    <div>
-      MainSideBar
-    </div>
-  )
-}
+    <div className="w-full flex flex-col justify-center items-center py-4">
+      <ul>
+        <li className="flex flex-col justify-center items-center pb-6">
+          <i className="ri-newspaper-line px-4 text-xl"></i>
+          <span className="text-xs">Home</span>
+        </li>
+        <li className="flex flex-col justify-center items-center pb-6">
+          <i className="ri-newspaper-line px-4 text-xl"></i>
+          <span className="text-xs">Shorts</span>
+        </li>
+        <li className="flex flex-col justify-center items-center pb-6">
+          <i className="ri-newspaper-line px-4 text-xl"></i>
+          <span className="text-xs">Subscriptions</span>
+        </li>
+        <li className="flex flex-col justify-center items-center pb-6">
+          <i className="ri-newspaper-line px-4 text-xl"></i>
+          <span className="text-xs">You</span>
+        </li>
+      
 
-export default MainSideBar
+      </ul>
+    </div>
+  );
+};
+
+export default MainSideBar;
