@@ -1,8 +1,10 @@
 import React from "react";
 
 const Sidebar = () => {
+
   const spanCss = "text-base font-semibold";
   return (
+    
     <div className="w-2/12 fixed left-0 bg-white h-screen overflow-y-scroll text-black flex flex-col justify-start items-start pt-4 px-2 z-20">
       <div className="pb-2 border-b border-gray-400 w-full">
         <ul>
