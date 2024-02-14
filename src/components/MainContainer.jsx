@@ -9,7 +9,7 @@ const MainContainer = () => {
       <div className="w-1/12  text-white bg-zinc-900  h-screen fixed left-0">
         <MainSideBar />
       </div>
-      <div className="flex w-11/12 pr-10 h-screen ml-32 flex-col justify-start items-start">
+      <div className="flex w-11/12 pr-10 ml-32 flex-col justify-start items-start">
         <ButtonList />
         <VideoContainer />
       </div>

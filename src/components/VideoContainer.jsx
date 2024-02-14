@@ -3,8 +3,20 @@ import VideoCards from './VideoCards'
 
 const VideoContainer = () => {
   return (
-    <div className='w-full bg-slate-500 mt-8 h-96 mr-10'>
+    <div className='w-full justify-between flex-wrap  items-start flex flex-row mt-16  mr-10'>
      <VideoCards/>
+     <VideoCards/>
+
+     <VideoCards/>
+     <VideoCards/>
+     <VideoCards/>
+
+     <VideoCards/>
+     <VideoCards/>
+     <VideoCards/>
+
+     <VideoCards/>
+
     </div>
   )
 }
