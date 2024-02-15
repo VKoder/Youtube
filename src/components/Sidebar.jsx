@@ -5,7 +5,7 @@ const Sidebar = () => {
   const spanCss = "text-base font-semibold";
   return (
     
-    <div className="w-2/12 fixed left-0 bg-white h-screen overflow-y-scroll text-black flex flex-col justify-start items-start pt-4 px-2 z-20">
+    <div className="w-60 fixed left-0 bg-zinc-900 text-white h-screen overflow-y-scroll flex flex-col justify-start items-start pt-4 pl-6 pr-2 z-20">
       <div className="pb-2 border-b border-gray-400 w-full">
         <ul>
           <li className="pb-2">

@@ -1,11 +1,13 @@
 import React from "react";
+import Button from "./Button";
 
 const ButtonList = () => {
+  const name = ['All','Tarak Mehta', 'Podcast','Akshay Saini','React','Thrillers','Comedy','Rohit Sharma','Javascript','Rohit','dsfs','dsfsdfds','History']
   return (
-    <div className="flex w-full fixed py-3 flex-row overflow-x-scroll text-white bg-zinc-900 no-scrollbar">
-      <button className="px-5 rounded-md font-semibold mr-4 text-sm py-1.5 bg-zinc-800">
-        Hii
-      </button>
+    <div className="flex w-full fixed py-3 flex-row whitespace-nowrap  overflow-x-scroll text-white bg-zinc-900 no-scrollbar">
+     {
+      name?.map((name)=> <Button name={name}/>)
+     }
     </div>
   );
 };

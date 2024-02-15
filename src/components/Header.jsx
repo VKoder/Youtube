@@ -17,14 +17,14 @@ const Header = () => {
   return (
     <div className="flex flex-row justify-between items-center w-full fixed top-0 bg-zinc-900 text-white py-1.5 px-3 md:py-4 md:px-10">
       {showSearch && (
-        <div className="w-3/12 md:w-2/12 flex justify-start gap-4 flex-row">
+        <div className="w-3/12 md:w-2/12 flex justify-start items-center gap-4 flex-row">
           <i
             className="hidden md:block text-2xl ri-menu-fill cursor-pointer"
             onClick={handleSideToggle}
           ></i>
           <img
-            className="sm:w-32 w-60 md:w-28"
-            src="https://imgs.search.brave.com/ZkmciWYxBPpDh_MtRVSqu6hNmBsU9tpAEHN9oo0JKLI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzA3LzQ2Lzg0/LzM2MF9GXzUwNzQ2/ODQ3OV9IZnJwVDdD/SW9ZVEJaU0dSUWk3/UmNXZ285OHdvM3Zi/Ny5qcGc"
+            className="sm:w-32 w-60 md:w-24 h-5"
+            src="https://imgs.search.brave.com/XHxHwtmvjGyrE7iUyyQkJs37xSdxIvttt6e5JbK6SsE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9mcmVl/bG9nb3BuZy5jb20v/aW1hZ2VzL2FsbF9p/bWcvMTY1NjUwMTQx/NXlvdXR1YmUtcG5n/LWxvZ28ucG5n"
             alt="logo"
           ></img>
         </div>

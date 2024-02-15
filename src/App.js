@@ -8,7 +8,7 @@ function App() {
   
   return (
     <Provider store={appStore}>
-    <div className="bg-zinc-900 ">
+    <div className="bg-zinc-900 w-12/12">
       <Header/>
       <Body/>
     </div>
