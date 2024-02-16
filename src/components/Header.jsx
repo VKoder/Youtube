@@ -17,9 +17,9 @@ const Header = () => {
   return (
     <div className="flex flex-row justify-between items-center w-full fixed top-0 bg-zinc-900 text-white py-1.5 px-3 md:py-4 md:px-10">
       {showSearch && (
-        <div className="w-3/12 md:w-2/12 flex justify-start items-center gap-4 flex-row">
+        <div className="w-3/12 md:w-2/12 flex justify-start items-center gap-4 flex-row ">
           <i
-            className="hidden md:block text-2xl ri-menu-fill cursor-pointer"
+            className="hidden md:block text-xl ri-menu-fill hover:opacity-40 cursor-pointer "
             onClick={handleSideToggle}
           ></i>
           <img
