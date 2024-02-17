@@ -35,7 +35,7 @@ const WatchPage = () => {
           </div>
         </div>
       </div>
-      <div className="h-full w-4/12">bye</div>
+      <div className="h-full w-4/12">live chat and recommended</div>
     </div>
   );
 };
