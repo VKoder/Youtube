@@ -1,11 +1,14 @@
 import React from "react";
 import { useSearchParams } from "react-router-dom";
-import Comment from "./Comment";
 import VideoInfo from "./VideoInfo";
+import useVideoDetails from "../custom hooks/useVideoDetails";
+import useVideoComments from "../custom hooks/useVideoComments";
 
 const WatchPage = () => {
   const [letSearch] = useSearchParams();
   const params = letSearch.get("v");
+  useVideoDetails(params)
+  useVideoComments(params)
 
   return (
     <div className="flex flex-row justify-between px-28 gap-8  items-start w-full py-2">
@@ -23,17 +26,7 @@ const WatchPage = () => {
         </div>
         <VideoInfo />
 
-        <div className="flex w-full pt-8 flex-col">
-          <div className="text-white flex flex-row justify-start items-center gap-16">
-            <span className="text-xl font-bold">102,762 Comments</span>
-            <span className="text-base font-semibold">
-              <i class="ri-sort-desc pr-3"></i>Sort By
-            </span>
-          </div>
-          <div className=" w-full  mt-8  rounded-xl">
-            <Comment />
-          </div>
-        </div>
+       
       </div>
       <div className="h-full w-4/12">live chat and recommended</div>
     </div>
