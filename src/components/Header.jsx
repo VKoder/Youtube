@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addSideBar } from "../store/appSlice";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [showSearch, setshowSearch] = useState(true);

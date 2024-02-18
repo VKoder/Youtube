@@ -23,8 +23,8 @@ const Comment = () => {
   return (
     <>
     {
-    videoComment?.map((comm) => 
-    <div className="w-full flex flex-row gap-2 justify-start items-start py-2">
+    videoComment?.map((comm) =>
+    <div key={comm?.id} className="w-full flex flex-row gap-2 justify-start items-start py-2">
               <div className='w-1/12'>
                 <img alt="logo" className=" w-12 rounded-full" src={comm?.snippet?.topLevelComment?.snippet?.authorProfileImageUrl}></img>
               </div>

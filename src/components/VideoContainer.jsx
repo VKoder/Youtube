@@ -11,11 +11,10 @@ const VideoContainer = () => {
   if (!videos) {
     return console.log("coming soon")
   }
-  console.log(videos)
   return (
     <div className='w-full justify-between flex-wrap  items-start flex flex-row mt-16 mr-10'>
       { 
-      videos.map(info =>   <Link to={"/watch?v=" + info?.id}><VideoCards key={info?.id} info={info}/></Link>)
+      videos.map(info =>   <Link to={"/watch?v=" + info?.id} key={info?.id}><VideoCards  info={info}/></Link>)
       }
 
     </div>

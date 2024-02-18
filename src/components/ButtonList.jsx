@@ -6,7 +6,7 @@ const ButtonList = () => {
   return (
     <div className="flex w-full fixed py-3 flex-row whitespace-nowrap  overflow-x-scroll text-white bg-zinc-900 no-scrollbar">
      {
-      name?.map((name)=> <Button name={name}/>)
+      name?.map((name)=> <Button key={name} name={name}/>)
      }
     </div>
   );
